@@ -1,5 +1,6 @@
 package testPackage;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -44,5 +45,8 @@ public class TC_RemoveProductFromCart_002_Test extends BaseTest {
         
         // Assert all to report failures if any
         sa.assertAll();
+        {
+        	Reporter.log("Test Case Executed Successfully", true);
+        }
     }
 }
